@@ -17,10 +17,10 @@ Features Included: 1. Attendance
                    8. Student loan
                    9. Couse related materials according to branches
                    10. To do list(keeping track of their work)
-                   
                    Please See the following youtube video through the link, we were unable to upload proper youtube link due to lack of 
                    technical expertise and slow internet speed, I feel sorry for the convenience. 
                    
+                 
                    
                    Youtube Link: https://www.youtube.com/watch?v=HtYEgYolmLw
                    
