@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.homefragment.AttendanceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#191e38">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linear_layout_tittle"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="32sp"
+                android:layout_height="32sp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/arrowback8"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:translationZ="100sp" />
+
+
+            <TextView
+                android:id="@+id/membertitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Internship"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_layout_tittle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Keep track of your 75 %"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <!--        <com.mikhaellopez.circularprogressbar.CircularProgressBar-->
+        <!--            android:id="@+id/progress_bar"-->
+        <!--            android:layout_width="100sp"-->
+        <!--            android:layout_height="100sp"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            app:cpb_background_progressbar_width="15sp"-->
+        <!--            android:layout_below="@+id/attendance_layout_days"/>-->
+        <!--        <include layout="@layout/customattendance"-->
+        <!--            android:layout_below="@+id/attendance_layout_days"-->
+        <!--            android:id="@+id/custom_attendance"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="30sp"-->
+        <!--            android:layout_centerHorizontal="true"/>-->
+
+        <com.solaris.bitzone.modal.customattendance
+            android:layout_marginLeft="35sp"
+            android:layout_width="match_parent"
+            android:id="@+id/custom_attendance"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="30sp"
+            android:layout_height="wrap_content"
+            app:attendance_days="10"
+            app:subject="Physics"
+            android:layout_centerHorizontal="true"
+            app:days_possible="50"
+            app:percentage="0%"/>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text_view_progress"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:text="60%"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:layout_below="@+id/attendance_layout_days"-->
+        <!--            android:layout_marginTop="40sp"-->
+        <!--            android:layout_centerHorizontal="true"></TextView>-->
+        <Button
+            android:id="@+id/button_decr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FB4F4F"
+            android:layout_below="@+id/custom_attendance"
+            android:layout_marginLeft="40sp"
+            android:text="- 10%"/>
+
+        <!--Increment button that will increment the progress by 10%-->
+        <Button
+            android:id="@+id/button_incr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3460FF"
+            android:layout_below="@+id/custom_attendance"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40sp"
+            android:text="+ 10%"
+            />
+
+
+
+        <!--        <org.naishadhparmar.zcustomcalendar.CustomCalendar-->
+        <!--            android:id="@+id/custom_calendar"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--            android:layout_marginRight="10sp"-->
+        <!--            android:layout_marginLeft="10sp"-->
+        <!--            android:layout_below="@+id/attendance_layout_days"-->
+        <!--            android:layout_marginTop="40sp"/>-->
+        <!--        <com.kizitonwose.calendar.view.CalendarView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/attendance_layout_days"-->
+        <!--                    android:id="@+id/attendance_calendar"-->
+        <!--                    android:layout_marginLeft="10sp"-->
+        <!--                    android:layout_marginTop="50sp"-->
+        <!--                    android:layout_marginRight="10sp"-->
+        <!--            app:cv_dayViewResource="@layout/calendar_day_layout" />-->
+        <!--        <CalendarView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/attendance_layout_days"-->
+        <!--            android:id="@+id/attendance_calendar"-->
+        <!--            android:layout_marginLeft="10sp"-->
+        <!--            android:layout_marginTop="50sp"-->
+        <!--            android:layout_marginRight="10sp"-->
+        <!--            android:theme="@style/CalenderViewCustom"-->
+        <!--            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"-->
+        <!--            android:dateTextAppearance="@style/CalenderViewDateCustomText"/>-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:layout_below="@id/attendance_layout_days">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:layout_marginBottom="20dp"-->
+        <!--                android:layout_marginTop="20dp"-->
+        <!--                android:layout_marginLeft="10sp"-->
+        <!--                android:layout_marginRight="10sp">-->
+        <!--                <Button-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="prev"-->
+        <!--                    android:textColor="#fff"-->
+        <!--                    android:background="@null"-->
+        <!--                    android:textStyle="bold"-->
+        <!--                    android:onClick="previousMonthAction"-->
+        <!--                    android:textSize="20sp"/>-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/monthYearTV"-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_weight="2"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Feb 2021"-->
+        <!--                    android:textSize="20sp"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textColor="@color/black"/>-->
+
+        <!--                <Button-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="next"-->
+        <!--                    android:textColor="#fff"-->
+        <!--                    android:background="@null"-->
+        <!--                    android:textStyle="bold"-->
+        <!--                    android:onClick="nextMonthAction"-->
+        <!--                    android:textSize="20sp"/>-->
+
+        <!--            </LinearLayout>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:layout_marginLeft="10sp"-->
+        <!--                android:layout_marginRight="10sp">-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="SUN"-->
+        <!--                    android:textColor="#fff"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textSize="16sp"/>-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="MON"-->
+        <!--                    android:textColor="#fff"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textSize="16sp"/>-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="TUE"-->
+        <!--                    android:textColor="#fff"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textSize="16sp"/>-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="WED"-->
+        <!--                    android:textColor="#fff"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textSize="16sp"/>-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="THUR"-->
+        <!--                    android:textColor="#fff"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textSize="16sp"/>-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="FRI"-->
+        <!--                    android:textColor="#fff"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textSize="16sp"/>-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="SAT"-->
+        <!--                    android:textColor="#fff"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textSize="16sp"/>-->
+
+
+        <!--            </LinearLayout>-->
+
+
+        <!--            <androidx.recyclerview.widget.RecyclerView-->
+        <!--                android:id="@+id/calendarRecyclerView"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"/>-->
+
+        <!--        </LinearLayout>-->
+    </RelativeLayout>
+
+
+</FrameLayout>

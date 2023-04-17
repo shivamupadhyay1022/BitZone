@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "874693575569",
+    "firebase_url": "https://solaris-bitzone-default-rtdb.firebaseio.com",
+    "project_id": "solaris-bitzone",
+    "storage_bucket": "solaris-bitzone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874693575569:android:6985fbe6dfd6975d6b9030",
+        "android_client_info": {
+          "package_name": "com.solaris.bitzone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874693575569-ms9l3hg46vuvvoo9uivodb2p7efshecb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMcVXuaJqTh5umYcrjhWu4yV-TQN93PIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874693575569-ms9l3hg46vuvvoo9uivodb2p7efshecb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

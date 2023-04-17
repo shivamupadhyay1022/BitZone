@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ClubinfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40sp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#191e38">
+
+            <ImageView
+                android:layout_width="32sp"
+                android:layout_height="32sp"
+                android:layout_marginTop="48dp"
+                android:id="@+id/arrowback"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:translationZ="100sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <TextView
+                android:id="@+id/clubinfo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clubinfo_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="All that's going on in BIT"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clubinfo_title" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="65sp"
+                    android:layout_marginLeft="34sp"
+                    android:layout_marginRight="8sp"
+                    android:id="@+id/info_member"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/shape_rect_blue">
+
+
+                    <ImageView
+                        android:id="@+id/ct_symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_person_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.4" />
+
+                    <TextView
+                        android:id="@+id/ct_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Members"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ct_symbol" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="65sp"
+                    android:layout_marginLeft="8sp"
+                    android:id="@+id/info_past"
+                    android:layout_marginRight="34sp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/shape_rect_red">
+
+
+                    <ImageView
+                        android:id="@+id/ct_symbol3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_menu_book_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Past Events"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ct_symbol3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.060000002">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp">
+                    <ImageSwitcher
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <!--                <com.smarteist.autoimageslider.SliderView-->
+                    <!--                    android:id="@+id/image_slider"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="300dp"-->
+                    <!--                    android:layout_marginLeft="5sp"-->
+                    <!--                    android:layout_marginRight="5sp"-->
+                    <!--                    android:background="@drawable/rounded_colored_button"-->
+                    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                    app:layout_constraintHorizontal_bias="1.0"-->
+                    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                    app:layout_constraintVertical_bias="0.049"-->
+                    <!--                    app:sliderAnimationDuration="800"-->
+                    <!--                    app:sliderAutoCycleDirection="back_and_forth"-->
+                    <!--                    app:sliderAutoCycleEnabled="true"-->
+                    <!--                    app:sliderIndicatorAnimationDuration="800"-->
+                    <!--                    app:sliderIndicatorGravity="center_horizontal|bottom"-->
+                    <!--                    app:sliderIndicatorMargin="15dp"-->
+                    <!--                    app:sliderIndicatorOrientation="horizontal"-->
+                    <!--                    app:sliderIndicatorPadding="3dp"-->
+                    <!--                    app:sliderIndicatorRadius="2dp"-->
+                    <!--                    app:sliderIndicatorSelectedColor="#5A5A5A"-->
+                    <!--                    app:sliderIndicatorUnselectedColor="#FFF"-->
+                    <!--                    app:sliderScrollTimeInSec="4"-->
+                    <!--                    app:sliderStartAutoCycle="true" />-->
+
+                    <!--                <com.denzcoskun.imageslider.ImageSlider-->
+                    <!--                    android:id="@+id/image_slider"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="200sp"-->
+                    <!--                    app:iss_auto_cycle="true"-->
+                    <!--                    app:iss_placeholder="@drawable/poster1"-->
+                    <!--                    app:iss_period="1000"-->
+                    <!--                    app:iss_delay="1000"/>-->
+                    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                    app:layout_constraintHorizontal_bias="1.0"-->
+                    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                    app:layout_constraintVertical_bias="0.049"-->
+
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/image_slider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300sp"
+                        app:iss_auto_cycle="true"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:textAlignment="center"
+                        android:background="@drawable/rounded_colored_button"
+                        app:iss_delay="1500"
+                        app:iss_period="2000"
+                        android:paddingRight="10sp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image_slider"
+                        android:layout_marginTop="30sp"
+                        android:id="@+id/tittle2"
+                        android:text="News"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tittle2"
+                        android:layout_marginTop="20sp"
+                        android:text="News"
+                        android:id="@+id/textView_news"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

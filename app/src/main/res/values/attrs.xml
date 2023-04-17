@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="customattendance">
+
+        <attr name="subject" format = "string"/>
+        <attr name="attendance_days" format = "string"/>
+        <attr name="days_possible" format="string"/>
+        <attr name="percentage" format="string"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="trendattrs">
+
+        <attr name="trendtext"  format = "string"/>
+        <attr name="trendgrp"   format = "string"/>
+        <attr name="trendprd"   format="string"/>
+        <attr name="tx"     format ="integer"/>
+
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40sp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#191e38">
+
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="All that's going on in BIT"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="65sp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginRight="8sp"
+                    android:id="@+id/home_attendance"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/shape_rect">
+
+
+                    <ImageView
+                        android:id="@+id/ct_symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_menu_book_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.4" />
+
+                    <TextView
+                        android:id="@+id/ct_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Attendance"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ct_symbol" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="65sp"
+                    android:id="@+id/home_bus"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginRight="8sp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/shape_rect_blue">
+
+
+                    <ImageView
+                        android:id="@+id/ct_symbol3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_directions_bus_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="BIT Bus"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ct_symbol3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="65sp"
+                    android:id="@+id/home_map"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginRight="8sp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/shape_rect_green">
+
+
+                    <ImageView
+                        android:id="@+id/ct_symbol4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_map_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="BIT Map"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ct_symbol4" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="65sp"
+                    android:id="@+id/home_holiday"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginRight="8sp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/shape_rect_red">
+
+
+                    <ImageView
+                        android:id="@+id/ct_symbol2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_calendar_month_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Holidays"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ct_symbol2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.060000002">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp">
+                    <ImageSwitcher
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <!--                <com.smarteist.autoimageslider.SliderView-->
+                    <!--                    android:id="@+id/image_slider"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="300dp"-->
+                    <!--                    android:layout_marginLeft="5sp"-->
+                    <!--                    android:layout_marginRight="5sp"-->
+                    <!--                    android:background="@drawable/rounded_colored_button"-->
+                    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                    app:layout_constraintHorizontal_bias="1.0"-->
+                    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                    app:layout_constraintVertical_bias="0.049"-->
+                    <!--                    app:sliderAnimationDuration="800"-->
+                    <!--                    app:sliderAutoCycleDirection="back_and_forth"-->
+                    <!--                    app:sliderAutoCycleEnabled="true"-->
+                    <!--                    app:sliderIndicatorAnimationDuration="800"-->
+                    <!--                    app:sliderIndicatorGravity="center_horizontal|bottom"-->
+                    <!--                    app:sliderIndicatorMargin="15dp"-->
+                    <!--                    app:sliderIndicatorOrientation="horizontal"-->
+                    <!--                    app:sliderIndicatorPadding="3dp"-->
+                    <!--                    app:sliderIndicatorRadius="2dp"-->
+                    <!--                    app:sliderIndicatorSelectedColor="#5A5A5A"-->
+                    <!--                    app:sliderIndicatorUnselectedColor="#FFF"-->
+                    <!--                    app:sliderScrollTimeInSec="4"-->
+                    <!--                    app:sliderStartAutoCycle="true" />-->
+
+                    <!--                <com.denzcoskun.imageslider.ImageSlider-->
+                    <!--                    android:id="@+id/image_slider"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="200sp"-->
+                    <!--                    app:iss_auto_cycle="true"-->
+                    <!--                    app:iss_placeholder="@drawable/poster1"-->
+                    <!--                    app:iss_period="1000"-->
+                    <!--                    app:iss_delay="1000"/>-->
+                    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                    app:layout_constraintHorizontal_bias="1.0"-->
+                    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                    app:layout_constraintVertical_bias="0.049"-->
+
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/image_slider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300sp"
+
+                        app:iss_auto_cycle="true"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:textAlignment="center"
+                        android:background="@drawable/rounded_colored_button"
+                        app:iss_delay="1500"
+                        app:iss_period="2000"
+                        android:paddingRight="10sp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView5"
+                        android:layout_below="@+id/image_slider"
+                        android:layout_marginTop="30sp"
+                        android:text="All That's Happening in BIT"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView5"
+                        android:id="@+id/textnews"
+                        android:layout_marginTop="15sp"
+                        android:text="All That's Happening in BIT"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

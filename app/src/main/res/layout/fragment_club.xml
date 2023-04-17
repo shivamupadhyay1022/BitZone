@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ClubFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#191e38">
+
+
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/testiamgeview"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/imageView5"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/imageView_cloud"></ImageView>-->
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Clubs"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="All you wanna know about clubs"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/textView_nss"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45sp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView4"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/shape_rect_blue"
+            android:text="Nss"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="RtlCompat" />
+
+
+        <TextView
+            android:id="@+id/textView_iet"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45sp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView_nss"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/shape_rect_blue"
+            android:clickable="true"
+            android:text="IET"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_robolution"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_marginLeft="45sp"
+            android:gravity="center_vertical"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView_iet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/shape_rect_blue"
+            android:clickable="true"
+            android:text="Robolution"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

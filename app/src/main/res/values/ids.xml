@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textView_nss" type="id" />
+    <item name="textView_iet" type="id" />
+    <item name="textView_robolution" type="id" />
+</resources>

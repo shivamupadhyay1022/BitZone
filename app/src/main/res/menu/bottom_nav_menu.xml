@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/m_home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24" />
+    <item
+        android:id="@+id/m_course"
+        android:title="Course"
+        android:icon="@drawable/ic_baseline_book_24"/>
+    <item
+        android:id="@+id/m_club"
+        android:title="Clubs"
+        android:icon="@drawable/ic_baseline_handshake_24"/>
+    <item
+        android:id="@+id/m_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"/>
+    <item
+        android:id="@+id/m_sarc"
+        android:title="Internship"
+        android:icon="@drawable/ic_baseline_work_24"/>
+
+
+</menu>

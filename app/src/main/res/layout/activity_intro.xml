@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity"
+    android:background="#03174C">
+
+<ImageView
+android:id="@+id/books_left"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/books_left"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.746" />
+
+<ImageView
+android:id="@+id/zigzag"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:src="@drawable/zigzag"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.0" />
+
+<ImageView
+android:id="@+id/imageView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="96dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="1.0"
+app:layout_constraintStart_toEndOf="@+id/books_left"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.77"
+app:srcCompat="@drawable/books_lright" />
+
+<Button
+android:id="@+id/button_openregister"
+android:layout_width="232dp"
+android:layout_height="51dp"
+android:text="Register"
+android:onClick="onClick"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.519"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.874" />
+
+<TextView
+android:id="@+id/textView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="80dp"
+android:text="BitZone"
+android:textColor="#FBFBFB"
+android:textSize="32sp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.498"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="@+id/zigzag" />
+
+<TextView
+android:id="@+id/textView2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="24dp"
+android:text="A Zone for all you BIT trek"
+android:textColor="#FAF8F8"
+android:textSize="20sp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.497"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+<ImageView
+android:id="@+id/imageView2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="116dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.18"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/textView2"
+app:srcCompat="@drawable/moon_camera" />
+
+<ImageView
+android:id="@+id/imageView3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="48dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.561"
+app:layout_constraintStart_toEndOf="@+id/imageView2"
+app:layout_constraintTop_toBottomOf="@+id/textView2"
+app:srcCompat="@drawable/bulb" />
+
+<ImageView
+android:id="@+id/imageView4"
+android:layout_width="48dp"
+android:layout_height="202dp"
+android:layout_marginTop="332dp"
+android:layout_marginBottom="-30dp"
+app:layout_constraintBottom_toTopOf="@+id/imageView"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="1.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="1.0"
+app:srcCompat="@drawable/vase_right" />
+
+<TextView
+android:id="@+id/textView3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginBottom="40dp"
+android:text="Already Registered ?"
+android:textColor="#FEFEFE"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.327"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/button_openregister"
+app:layout_constraintVertical_bias="1.0" />
+
+<TextView
+android:id="@+id/clickhere_login"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:clickable="true"
+android:layout_marginEnd="48dp"
+android:layout_marginBottom="40dp"
+android:onClick="onClick"
+android:text="Click Here"
+android:textColor="#FFFFFF"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.53"
+app:layout_constraintStart_toEndOf="@+id/textView3"
+app:layout_constraintTop_toBottomOf="@+id/button_openregister"
+app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

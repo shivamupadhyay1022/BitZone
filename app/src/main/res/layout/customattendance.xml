@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/shape">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="50"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="15sp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:id="@+id/attendance_subject"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:textSize="17sp"
+        android:layout_marginLeft="40sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="10sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/attendance_days"
+        android:layout_below="@+id/attendance_subject"
+        android:layout_marginLeft="40sp"
+        android:text="Attendance:"
+        android:textSize="17sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="10sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/attendance_days_no"
+            android:layout_below="@+id/attendance_days"
+            android:layout_marginLeft="40sp"
+            android:text="No"
+            android:textSize="17sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:layout_below="@+id/attendance_days_no"
+        android:layout_marginLeft="40sp"
+        android:text="Status:"
+        android:textColor="@color/white"
+        android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="10sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/attendance_status"
+            android:layout_below="@+id/status"
+            android:layout_marginLeft="40sp"
+            android:text="No absent possible"
+            android:textSize="17sp"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="50"
+        android:layout_height="match_parent">
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="100sp"
+            android:layout_centerInParent="true"
+            android:layout_height="100sp"
+            app:cpb_background_progressbar_width="15sp"/>
+
+        <TextView
+            android:id="@+id/text_view_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="60%"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+</LinearLayout>
